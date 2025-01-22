@@ -1,4 +1,4 @@
-# Topic-FlipRAG:Topic-Orientated Adversarial Opinion Manipulation Attacks against RAG models
+# Topic-FlipRAG:Topic-FlipRAG: Topic-Orientated Adversarial Opinion Manipulation Attacks to Retrieval-Augmented Generation Models
 
 
 ![Python Version](https://img.shields.io/badge/python-3.9%2B-blue)
