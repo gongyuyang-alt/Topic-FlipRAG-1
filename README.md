@@ -1,67 +1,52 @@
-# Topic-FlipRAG:Topic-FlipRAG: Topic-Orientated Adversarial Opinion Manipulation Attacks to Retrieval-Augmented Generation Models
-
+# 🎯 Topic-FlipRAG: Topic-Oriented Adversarial Opinion Manipulation Attacks on RAG Models
 
 ![Python Version](https://img.shields.io/badge/python-3.9%2B-blue)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Overview
 
-This repository contains the implementation of Topic-FlipedRAG, a novel two-stage adversarial attack framework targeting Retrieval-Augmented Generation (RAG) systems. The proposed method demonstrates how strategic knowledge poisoning can systematically manipulate LLM outputs for opinion-oriented tasks through semantic-level perturbations.
+This repository contains the implementation of **Topic-FlipedRAG**, a two-stage adversarial attack framework that targets Retrieval-Augmented Generation (RAG) systems. The method demonstrates how topic-specific knowledge perturbation can systematically shift LLM outputs in opinion-oriented tasks.
 
-## Key Features
-- 🎯 **Topic-oriented attacks** on multi-perspective content generation
-- ⚡ **Dual-phase manipulation** combining:
-  - Traditional adversarial ranking techniques
-  - LLM-driven semantic perturbation generation
-- 📊 Comprehensive evaluation framework for opinion shift measurement
+---
 
-## Installation
+## 🔧 Key Features
+
+- 🎯 **Topic-centric trigger attacks** targeting multi-perspective generation
+- 🧠 **Two-stage pipeline**:
+  - Stage 1: Knowledge-guided adversarial sampling
+  - Stage 2: Gradient-based trigger optimization
+- 📏 Integrated **evaluation suite** for measuring stance/opinion drift
+
+---
+
+## 📁 Repository Structure
+
+| File / Notebook | Description |
+|------------------|-------------|
+| `PROCON_data.json` | PROCON dataset used in the paper |
+| `RAG_pipeline.ipynb` | RAG execution and evaluation pipeline |
+| `Stage1_knowledge_guided_attack.ipynb` | Stage 1 attack guided by LLM knowledge |
+| `Stage2_adversarial_trigger_generation.ipynb` | Stage 2 attack guided by NRM gradients |
+
+
+---
+
+## 🚀 Run in Colab (Recommended)
+
+| Notebook | Colab Link |
+|----------|------------|
+| `RAG_pipeline` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gongyuyang-alt/Topic-FlipedRAG/blob/main/RAG_pipeline.ipynb) |
+| `Stage 1 - Knowledge Attack` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gongyuyang-alt/Topic-FlipedRAG/blob/main/Stage1_knowledge_guided_attack.ipynb) |
+| `Stage 2 - Trigger Optimization` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gongyuyang-alt/Topic-FlipedRAG/blob/main/Stage2_adversarial_trigger_generation.ipynb) |
+
+---
+
+## 📦 Installation
 
 ```bash
-git clone https://github.com/your_anonymous_repo/Topic-FlipedRAG.git
+git clone https://github.com/gongyuyang-alt/Topic-FlipedRAG.git
 cd Topic-FlipedRAG
 pip install -r requirements.txt
-```
-
-**Requirements**:
-- Python 3.9+
-- PyTorch 2.0+
-- Transformers 4.30+
-- FAISS 1.7.2+
-- (Complete with your actual dependencies)
-
-## Usage
-
-### Basic Attack Pipeline
-```python
-from attack_pipeline import TopicFlipedRAG
-
-# Initialize attack module
-attack_config = {
-    "target_topic": "climate_change",
-    "opinion_direction": "skepticism",
-    "perturbation_level": 0.3
-}
-attacker = TopicFlipedRAG(**attack_config)
-
-# Execute attack on RAG system
-compromised_responses = attacker.execute_attack(
-    base_retriever=your_retriever,
-    generator_model=your_llm,
-    query_batch=test_queries
-)
-```
-
-### Evaluation Metrics
-```python
-from evaluation import OpinionShiftAnalyzer
-
-analyzer = OpinionShiftAnalyzer(reference_corpus="neutral_responses.json")
-shift_scores = analyzer.calculate_opinion_shift(
-    original_responses=baseline_outputs,
-    attacked_responses=compromised_responses
-)
-```
 
 ## Experimental Results
 
