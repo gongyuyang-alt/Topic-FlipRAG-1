@@ -11,12 +11,12 @@
 
 ## 🧠 Overview
 
-This repository contains the full implementation of **Topic-FlipRAG**, a two-stage adversarial attack framework targeting Retrieval-Augmented Generation (RAG) systems. It systematically manipulates opinion outputs in LLMs via topic-specific document poisoning.
+This repository contains the full implementation of **Topic-FlipRAG**, a novel black-box adversarial attack framework against Retrieval-Augmented Generation (RAG) systems. By leveraging general language knowledge and reverse-gradient signals, it optimizes a small number of poisoned documents to effectively flip the opinion stance of the RAG system across an entire set of topic-related queries.
 
 ### 📂 Repository Structure
 
 1. **Stage1_knowledge_guided_attack.ipynb**  
-   Includes the core logic for injecting topic-specific misinformation by modifying documents based on LLM-inferred knowledge (`doc_know` generation).
+   Includes the core implementation of the knowledge-guided attack, which leverages LLM-inferred general knowledge to perform multi-granularity document modifications (`doc_know` generation).
 
 2. **Stage2_adversarial_trigger_generation.ipynb**  
    Optimizes minimal triggers to attach to `doc_know` for final poisoned documents. Includes formatting scripts for downstream poisoning tasks.
