@@ -36,8 +36,8 @@ This repository contains the implementation of **Topic-FlipedRAG**, a two-stage 
 | Notebook | Colab Link |
 |----------|------------|
 | `RAG_pipeline` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gongyuyang-alt/Topic-FlipRAG-1/blob/main/RAG_pipeline.ipynb) |
-| `Stage 1 - Knowledge Attack` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gongyuyang-alt/Topic-FlipedRAG-1/blob/main/Stage1_knowledge_guided_attack.ipynb) |
-| `Stage 2 - Trigger Optimization` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gongyuyang-alt/Topic-FlipedRAG-1/blob/main/Stage2_adversarial_trigger_generation.ipynb) |
+| `Stage 1 - Knowledge Attack` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gongyuyang-alt/Topic-FlipRAG-1/blob/main/Stage1_knowledge_guided_attack.ipynb) |
+| `Stage 2 - Trigger Optimization` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gongyuyang-alt/Topic-FlipRAG-1/blob/main/Stage2_adversarial_trigger_generation.ipynb) |
 
 ---
 
