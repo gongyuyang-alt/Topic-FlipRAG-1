@@ -5,14 +5,16 @@
 
 ## Overview
 
-This repository contains the implementation of **Topic-FlipedRAG**, a two-stage adversarial attack framework that targets Retrieval-Augmented Generation (RAG) systems. The method demonstrates how topic-specific knowledge perturbation can systematically shift LLM outputs in opinion-oriented tasks.
+**Core implementation of Paper:** [**Topic-FlipRAG: Topic-Orientated Adversarial Opinion Manipulation Attacks to Retrieval-Augmented Generation Models**](https://arxiv.org/abs/2502.01386)
+
+This repository contains the implementation of **Topic-FlipRAG**, a two-stage adversarial attack framework targeting Retrieval-Augmented Generation (RAG) systems. The method illustrates how topic-specific knowledge perturbations can systematically manipulate LLM outputs in opinion-oriented tasks.
 
 ---
 
 ## 🔧 Key Features
 
-- 🎯 **Topic-centric trigger attacks** targeting multi-perspective generation
-- 🧠 **Two-stage pipeline**:
+- 🎯 **Topic-oriented trigger attacks** targeting multi-perspective generation
+- 🧠 **Two-stage attack pipeline**:
   - Stage 1: Knowledge-guided adversarial sampling
   - Stage 2: Gradient-based trigger optimization
 - 📏 Integrated **evaluation suite** for measuring stance/opinion drift
@@ -41,30 +43,7 @@ This repository contains the implementation of **Topic-FlipedRAG**, a two-stage 
 
 ---
 
-## 📦 Installation
 
-```bash
-git clone https://github.com/gongyuyang-alt/Topic-FlipedRAG.git
-cd Topic-FlipedRAG
-pip install -r requirements.txt
-
-## Experimental Results
-
-Our comprehensive evaluation demonstrates:
-- **+82%** success rate in opinion manipulation across 5 benchmark topics
-- **<15%** detection rate by current defense methods
-- **3.2x** amplification effect in multi-query scenarios
-
-(Replace with your actual experimental metrics)
-
-## Contributing
-
-This project welcomes contributions through:
-- New attack detection methods
-- Defense mechanism proposals
-- Additional evaluation benchmarks
-
-Please submit issues/pull requests following our contribution guidelines.
 
 ## License
 
