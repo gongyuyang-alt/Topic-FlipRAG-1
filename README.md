@@ -51,8 +51,7 @@ This project is **Colab-friendly**. You only need to replace paths in the Jupyte
 ---
 
 ## 💡 Note
-To facilitate quick testing, we provide a subset of poisoned documents located in `data/Topic-FlipRAG_society_CON_passges/`, specifically targeting the `"Society & Culture"` domain with a CON (oppose) stance.  
-For full-scale evaluation, you can modify the code to load the entire dataset from `PROCON_data.json`.
+To facilitate quick testing, we provide a subset of poisoned documents located in `data/Topic-FlipRAG_society_CON_passges/`, specifically targeting the `"Society & Culture"` domain with a CON (oppose) stance.  For full-scale evaluation, you can modify the code to load the entire dataset from `PROCON_data.json`.
 
 ---
 
