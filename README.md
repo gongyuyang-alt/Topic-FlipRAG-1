@@ -38,16 +38,21 @@ This project is **Colab-friendly**. You only need to replace paths in the Jupyte
 
 1. **Stage 1 – Knowledge-guided Attack**  
    [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gongyuyang-alt/Topic-FlipRAG-1/blob/main/Stage1_knowledge_guided_attack.ipynb)  
-   ⮕ Replace `path_know = 'doc_path_from_stage_1_know_attack.json'` with  `data/know_attack_data_3_0.json`
+   ⮕ Replace `path_know = 'doc_path_from_stage_1_know_attack.json'` with  
+   `data/know_attack_data_3_0.json`  
+   💡 *Recommended GPU: T4*
 
-2. **Stage 2 – Adversarial Trigger generation**  
+2. **Stage 2 – Adversarial Trigger Generation**  
    [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gongyuyang-alt/Topic-FlipRAG-1/blob/main/Stage2_adversarial_trigger_generation.ipynb)  
-   ⮕ Format and optimize triggers based on Stage 1 outputs.
+   ⮕ Format and optimize triggers based on Stage 1 outputs.  
+   💡 *Recommended GPU: T4 *
 
 3. **RAG Pipeline – Execution & Evaluation**  
    [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gongyuyang-alt/Topic-FlipRAG-1/blob/main/RAG_pipeline.ipynb)  
-   ⮕ Replace `result_path` in `load_data()` with a file path from  `data/Topic-FlipRAG_society_CON_passges/` (we recommend using Google Drive for hosting large files)
-
+   ⮕ Replace `result_path` in `load_data()` with a file path from  
+   `data/Topic-FlipRAG_society_CON_passges/`  
+   💡 *Recommended GPU: A100*  
+   🔁 *We recommend using Google Drive to host large poisoned document files.*
 ---
 
 ## 💡 Note
